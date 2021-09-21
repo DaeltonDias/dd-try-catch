@@ -41,8 +41,11 @@ const [error, result] = tryCatch(fn);
 
 // Console on return
 
-if (error) console.log(error.message);
-console.log(result); // {"test": "ok"}
+if (error)  console.log(error.message);
+if (!error) console.log(result.test);
+
+// error  = null or {"message": "Error message"}
+// result = null or {"test": "ok"}
 
 ```
 
