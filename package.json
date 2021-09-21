@@ -1,0 +1,23 @@
+{
+  "name": "dd-try-catch",
+  "version": "1.0.0",
+  "description": "Simple Try Catch with only one return",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaeltonDias/dd-try-catch.git"
+  },
+  "keywords": [
+    "Simple Try Catch",
+    "Try Catch"
+  ],
+  "author": "Daelton Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaeltonDias/dd-try-catch/issues"
+  },
+  "homepage": "https://github.com/DaeltonDias/dd-try-catch#readme"
+}
