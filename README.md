@@ -22,7 +22,7 @@ const [error, result] = tryCatch(<Function>, <Param>);
 ```
 
 ```javascript
-// Asynchronous examples (Async / Await)
+// Asynchronous (Async / Await)
 const [error, result] = await tryCatchAsync(<Function>, <Param>);
 ```
 
