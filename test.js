@@ -10,7 +10,7 @@ const fnAsync = (param) => new Promise((resolve, reject) => {
 const param = '{"message": "ok"}';
 
 (async () => {
-  const fn = () => fnAsync(param); // Return a promisse
+  const fn = () => fnAsync(param); // Returns a promise
   const [ error, result ] = await tryCatchAsync(fn);
   const type = 'Asynchronous function';
   console.log({ error, result, type });

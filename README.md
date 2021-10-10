@@ -10,16 +10,19 @@ $ npm install dd-try-catch
 ```javascript
 // CommonJS
 const { tryCatch, tryCatchAsync } = require('dd-try-catch');
-
+```
+```javascript
 // ES6
 import { tryCatch, tryCatchAsync } from 'dd-try-catch';
 ```
 
 ```javascript
+// Synchronous
 const [error, result] = tryCatch(<Function>, <Param>);
+```
 
-// or
-
+```javascript
+// Asynchronous examples (Async / Await)
 const [error, result] = await tryCatchAsync(<Function>, <Param>);
 ```
 
@@ -60,13 +63,13 @@ if (!error) console.log(result.test);
   
   const axios = require('axios');
   
-  const fn = async () => await axios.get('https://myapi.com/posts'); // Return a promisse
-  const [error, result] = await tryCatchAsync(fn); // Execute and resolve a promisse
+  const fn = async () => await axios.get('https://myapi.com/posts'); // Returns a promise
+  const [error, result] = await tryCatchAsync(fn); // Execute and resolve a promise
 
   // or
 
-  const fn = () => axios.get('https://myapi.com/users'); // Return a promisse
-  const [error, result] = await tryCatchAsync(fn); // Execute and resolve a promisse
+  const fn = () => axios.get('https://myapi.com/users'); // Returns a promise
+  const [error, result] = await tryCatchAsync(fn); // Execute and resolve a promise
 
   console.log(result.data);
   
