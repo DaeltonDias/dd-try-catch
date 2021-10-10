@@ -1,3 +1,11 @@
+const tryCatchAsync = async (fn, ...args) => {
+  try {
+    return [null, await fn(...args)];
+  } catch(e) {
+    return [e];
+  }
+};
+
 const tryCatch = (fn, ...args) => {
   try {
     return [null, fn(...args)];
@@ -6,4 +14,7 @@ const tryCatch = (fn, ...args) => {
   }
 };
 
-module.exports = tryCatch;
+module.exports = {
+  tryCatchAsync,
+  tryCatch,
+};
